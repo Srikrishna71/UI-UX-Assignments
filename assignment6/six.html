@@ -9,14 +9,14 @@
 <body>
 
   <nav>
-    <a href="packages.html">Packages</a>
-    <a href="book.html">Booking</a>
-    <a href="gallery.html">Gallery</a>
+    <a href="#packages">Packages</a>
+    <a href="#booking">Booking</a>
+    <a href="#gallery">Gallery</a>
   </nav>
 
   <section id="packages">
     <h2>Available Packages</h2>
-    <table id="packageTable" border="1">
+    <table id="packageTable">
       <thead>
         <tr>
           <th>ID</th>
@@ -36,21 +36,25 @@
     <form id="bookingForm">
       <label>Package:
         <select id="packageSelect"></select>
-      </label><br>
-      <label>Check-In: <input type="date" id="checkIn"></label><br>
-      <label>Check-Out: <input type="date" id="checkOut"></label><br>
-      <label>Guests: <input type="number" id="guests" min="1" value="1"></label><br>
-      <label>Promo Code: <input type="text" id="promo"></label><br>
+      </label>
+      <label>Check-In: <input type="date" id="checkIn"></label>
+      <label>Check-Out: <input type="date" id="checkOut"></label>
+      <label>Guests: <input type="number" id="guests" min="1" value="1"></label>
+      <label>Promo Code: <input type="text" id="promo"></label>
       <p>Total Price: <span id="totalPrice">0</span></p>
-      <button type="submit" id="submitBtn">Book Now</button>
+      <button type="submit" id="submitBtn" disabled>Book Now</button>
     </form>
   </section>
 
   <section id="gallery">
     <h2>Gallery</h2>
     <div class="thumbs">
-      <img src="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg" data-large="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg" alt="Beach">
-      <img src="https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg" data-large="https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg" alt="Mountain">
+      <img src="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg" 
+           data-large="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg" alt="Beach">
+      <img src="https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg" 
+           data-large="https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg" alt="Mountain">
+      <img src="https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg" 
+           data-large="https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg" alt="City">
     </div>
   </section>
 
@@ -58,7 +62,7 @@
     <span id="closeModal">&times;</span>
     <img id="modalImg" src="" alt="Large image">
     <p id="modalCaption"></p>
-</div>
+  </div>
 
   <script src="six.js"></script>
 </body>
