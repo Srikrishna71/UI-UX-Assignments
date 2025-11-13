@@ -1,86 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srikrishna Vadlamani - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    nav {
+      background-color: #eaeaea;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #004aad;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    section h2 {
+      color: #004aad;
+      border-bottom: 3px solid #004aad;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    #about img {
+      float: right;
+      margin-left: 20px;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: 3px solid #004aad;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #004aad;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+
+    ol {
+      margin-left: 20px;
+    }
+
+    .project {
+      margin-top: 10px;
+    }
+
+    .project a {
+      color: #004aad;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
-<body style="background-color: grey; color: black;">
-    <h1>Krishna</h1>
-    <header>
-        <a href="https://github.com/">Github</a>
-        <a href="https://in.linkedin.com/">LinkedIn</a> <br> <br>
-    </header>
-    <h3>Go to</h3>
+
+<body>
+  <header>
+    <h1>Srikrishna Vadlamani</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm <strong>Srikrishna Vadlamani</strong>, a passionate <em>web developer</em> and <b>tech enthusiast</b>.
+      I love crafting interactive, efficient, and visually appealing digital experiences.
+      My focus is on clean design, optimized performance, and seamless user interfaces.
+    </p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <table>
+      <tr>
+        <th>Degree</th>
+        <th>Institution</th>
+        <th>Year</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Bachelor of Technology (B.Tech)</td>
+        <td>Thapar University</td>
+        <td>2023 - 2027</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td colspan="3"><i>Specialization: Computer Science and Engineering</i></td>
+      </tr>
+      <tr>
+        <td>Intermediate (12th)</td>
+        <td>Fiitjee College</td>
+        <td>2021 - 2023</td>
+        <td>A</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- ======== Skills Section ======== -->
+  <section id="skills">
+    <h2>Skills</h2>
     <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Python & Flask</li>
+      <li>SQL & Database Management</li>
+      <li>Machine Learning (KNN, Naive Bayes, Decision Tree)</li>
+      <li>Git & GitHub</li>
     </ul>
-    <div id="about">
-        <h2>About Me</h2>
-        <img src="https://miro.medium.com/v2/resize:fit:1400/1*KnV1cBSw-kWyh7Y6XEEzrA.jpeg" alt="pic" width="300px" height="300px" title="myPic">
-        <h3>I am studying Computer Science at Thapar University.</h3>
+  </section>
+
+  <!-- ======== Projects Section ======== -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Emotion-aware Cognitive Assistant</h3>
+      <p>
+        An AI-powered assistant that detects facial emotions using OpenCV and adapts responses.
+      </p>
     </div>
-    <div id="education">
-        <h2>Education</h2>
-        <table border="1">
-            <tr>
-                <th>S.no</th>
-                <th>Degree</th>
-                <th>Year</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>School</td>
-                <td>2021</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>High School</td>
-                <td>2023</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>University</td>
-                <td>2027</td>
-            </tr>
-        </table>
-    </div>
-    <div id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>Java</li>
-            <li>SQL</li>
-        </ul>
-    </div>
-    <div id="projects">
-        <h2>Projects</h2>
-        <ul >
-            <li>
-                <h3>Personal Finance Tracker Web App</h4>
-            </li>
-            <img src="https://plus.unsplash.com/premium_photo-1681487769650-a0c3fbaed85a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmluYW5jZXxlbnwwfHwwfHx8MA%3D%3D"
-                 alt="" width="200px" height="150px" >
-            <li>Create a web app for tracking income and expenses with categories.</li>
-            <li>Include user authentication and allow users to set monthly budgets and savings goals.</li>
-            <li>Visualize spending with interactive charts and ensure the app is mobile-friendly.</li>
-        </ul>
-    </div>
-    <div id="contact">
-        <h3>Contact Me</h3>
-        <nav>
-            <a href="https://www.gmail.com">Email</a>
-            <a href="https://www.x.com">Twitter</a>
-        </nav>
-    </div> <br> 
-    <footer>
-        Made by Krishna
-    </footer>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at: <b>srikrishna@example.com</b></p>
+    <p>
+      Connect with me on:
+      <a href="https://linkedin.com/in/srikrishna" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/srikrishna" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <footer>
+    Made by <strong>Srikrishna Vadlamani</strong> © 2025
+  </footer>
 </body>
 </html>
