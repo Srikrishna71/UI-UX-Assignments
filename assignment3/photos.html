@@ -1,49 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    body {
-        background-color: #212121;
-        color: white;
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
-    h1 {
-        text-align: center;
-        padding: 20px;
-        margin-top: 20px;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      padding: 20px;
-      max-width: 900px;
-      margin: 0 auto 40px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusFest 2026 - Photos</title>
+  <link rel="stylesheet" href="Four.css" />
 </head>
 <body>
-    <h1>College Events Gallery</h1>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80" alt="Music Festival" />
-    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=300&q=80" alt="Sports Event" />
-    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=300&q=80" alt="Campus Life" />
-    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=300&q=80" alt="Art Exhibition" />
-    <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=300&q=80" alt="Workshop" />
-    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=300&q=80" alt="Group Study" />
-  </div>
+  <header>
+    <h1>CampusFest 2026</h1>
+    <nav>
+      <a href="three.html">Home</a>
+      <a href="event.html">Events</a>
+      <a href="photos.html" class="active">Photos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.pexels.com/photos/3418587/pexels-photo-3418587.jpeg" alt="Hackathon" />
+      <img src="https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg" alt="Debate" />
+      <img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg" alt="Concert" />
+      <img src="https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg" alt="Art show" />
+      <img src="https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg" alt="Sports event" />
+      <img src="https://images.pexels.com/photos/2789182/pexels-photo-2789182.jpeg" alt="Audience" />
+    </div>
+  </section>
+
+  <footer>
+    © 2026 CampusFest | See last year’s <a href="#">Gallery 2025</a>
+  </footer>
 </body>
 </html>
