@@ -1,109 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Agency</title>
-  <style>
-    body {
-      background-color: #212121;
-      color: white;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    h1 {
-        text-align: center;
-        padding: 20px;
-        margin-top: 20px;
-    }
-    .navbar {
-      background-color: #333;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-    }
-    .navbar a {
-        color: white;
-        text-decoration: none;
-        padding: 14px 20px;
-        display: block;
-    }
-    .navbar a:hover {
-      background-color: #575757;
-    }
-    .navbar a.active {
-      background-color: #2980b9;
-    }
-    .content {
-        text-align: center;
-        margin-top: 20px;
-    }
-    form {
-      background: gold;
-      color: black;
-      max-width: 400px;
-      margin: 30px auto;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    label {
-      font-weight: bold;
-      display: block;
-      margin-top: 10px;
-    }
-    input, select, button {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    button {
-      background-color: #2980b9;
-      color: white;
-      border: none;
-      margin-top: 15px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    button:hover {
-      background-color: #1f6691;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusFest 2026 - Home</title>
+  <link rel="stylesheet" href="Four.css" />
 </head>
 <body>
-  <h1>College Events</h1>
-  <div class="navbar">
-    <a class="active" href="three.html">Home</a>
-    <a href="event.html">Event Details</a>
-    <a href="photos.html">Gallery</a>
-    <a href="contact.html">Contact Us</a>
-  </div>
-  <div class="content">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.kwQ9NoM2FCjLGuZfKUpUPwHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" 
-         alt="Travel image" height="200px" width="200px">
-    <div class="event-container">
-    <h1>Summer Music Festival 2025</h1>
-    <div class="date">August 21, 2025</div>
-    <p class="description">
-      Join us for a day of live music, food trucks, and fun activities in the heart of downtown. 
-      Experience performances from top artists and enjoy a vibrant community atmosphere.
-    </p>
-  </div>
-  <h1>Register for event</h1>
-  <form>
-    <label for="name">Full Name:</label>
-    <input type="text" id="name" name="name" required>
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" required>
-    <label for="people">Number of People:</label>
-    <input type="number" id="people" name="people" min="1" required>
-    <label for="name">Event Name:</label>
-    <input type="text" id="name" name="name" required>
-    <button type="submit">Register</button>
-  </form>
-  </div>
+  <header>
+    <h1>CampusFest 2026</h1>
+    <p class="tagline">Innovate • Compete • Celebrate</p>
+    <nav>
+      <a href="three.html" class="active">Home</a>
+      <a href="event.html">Events</a>
+      <a href="photos.html">Photos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg" alt="College Event Banner" />
+    <div class="hero-text">
+      <h2>Welcome to CampusFest 2026</h2>
+      <p>
+        Join us for three exciting days of innovation, performance, and celebration!  
+        From tech hackathons to cultural nights — CampusFest brings the best talent together.  
+        <strong>Date:</strong> April 10–12, 2026  
+        <br><strong>Venue:</strong> Greenfield College Campus
+      </p>
+      <a href="event.html" class="btn">Explore Events</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 CampusFest | Designed by Srikrishna 
+  </footer>
 </body>
 </html>
